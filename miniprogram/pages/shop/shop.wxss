@@ -1,0 +1,61 @@
+/* miniprogram/pages/shop/shop.wxss */
+.zero{
+  text-align: center;
+  font-size: 30rpx;
+  color:rgb(85, 83, 83);
+  line-height: 60rpx;
+}
+.header{
+  padding:20rpx 40rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+   color:rgb(85, 83, 83);
+}
+.buycar{
+  position:relative;
+  padding:20rpx 40rpx;
+  line-height: 60rpx;
+  color:rgb(85, 83, 83);
+  font-size: 30rpx; 
+  background:#fff;
+  margin:20rpx 0;
+}
+.lei{
+  display: flex;
+  justify-content: space-between;
+}
+.pic{
+  width:100rpx;height:100rpx;
+}
+.price,.num,.prices{
+    padding-top: 50rpx;
+}
+.delete{
+  width:100rpx;
+  height:60rpx;
+  margin:0;
+  margin-top:50rpx;
+  padding:0;
+  font-size: 24rpx;
+}
+/* .num{
+  position:absolute;
+  top:60rpx;
+  right:262rpx;   
+}
+
+.price{
+  position:absolute;
+  top:60rpx;
+  left:240rpx;
+}
+.prices{
+  position:absolute;
+  top:60rpx;
+  right:40rpx;
+  color:#f5b440;
+} */
+.zong{
+  margin:40rpx;
+}

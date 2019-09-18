@@ -1,0 +1,28 @@
+<!--miniprogram/pages/shop/shop.wxml-->
+<view wx:if="{{cargoods.length<1}}" class="zero">
+购物车空空如也~~~
+</view>
+<view class="header" wx:if="{{cargoods.length>0}}">
+  <view>名称</view>
+  <view>估价</view>
+  <view>数量</view>
+  <view>合计</view>
+  <view>删除</view>
+</view>
+<view wx:for="{{cargoods}}" wx:for-index="idx" class="buycar lei">
+  <view>
+   <image src="{{item.img}}" style="" class="pic" mode="aspectFit"></image>
+   <view class="name">{{item.name}}</view>
+  </view>
+  <view class="price">￥ {{item.price}}</view>
+  <view class="num">x {{item.num}}</view>
+  <view class="prices">{{prices}}</view>
+  <button class="delete" type="warn" bindtap="deletes" id="{{idx}}">删除</button>
+</view>
+<view class="buycar">
+  <view>总价值：{{allMoney}}</view>
+  <button type="primary" bindtap="save" class="zong">保存此展览页</button>
+  <view>保存以后下次打开小程序可再次查看保存的展览物品，给装修加点色彩吧</view>
+  <!-- <button type="primary" form-type="submit" class="zong">结算</button> -->
+</view>
+

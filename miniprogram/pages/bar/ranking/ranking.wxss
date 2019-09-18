@@ -1,0 +1,2 @@
+/* miniprogram/pages/bar/ranking/ranking.wxss */
+@import "../index.wxss";

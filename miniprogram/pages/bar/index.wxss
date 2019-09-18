@@ -1,0 +1,139 @@
+/**index.wxss**/
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+.container{
+  width:100%;
+  height:400px;
+  position:relative;
+  top:0;
+  left:0;
+  margin-bottom:40px;
+}
+.doubant{
+  text-align: center;
+  background:#fff;
+  line-height: 100rpx;
+  position:relative;
+  letter-spacing: 4rpx;
+}
+.doubant p{
+  color:rgb(248, 3, 3);
+  font-size: 24rpx;
+  position:absolute;
+  top:-20rpx;
+}
+.doubans{
+  position:relative;
+  width:90%;
+  margin:60rpx auto;
+  background:#fff;
+  border-radius: 20rpx;
+  padding:40rpx 20rpx;
+  overflow: hidden;
+
+}
+.movieimg{
+  width:200rpx;
+  margin:0 auto;
+  height:330rpx;
+}
+.name{
+  position:absolute;
+  top:0;
+  left:240rpx;
+  font-size: 30rpx;
+  color:rgb(41, 39, 39);
+  line-height: 60rpx;
+}
+.lei{
+  position:absolute;
+  top:60rpx;
+  left:240rpx;
+  font-size: 24rpx;
+  color:rgb(129, 127, 127);
+}
+.year{
+  position:absolute;
+  top:100rpx;
+  left:240rpx;
+   font-size: 24rpx;
+   color:rgb(129, 127, 127);
+}
+.ping{
+  position:absolute;
+  top:140rpx;
+  left:240rpx;
+   font-size: 24rpx;
+   color:rgb(129, 127, 127);
+}
+.long{
+   position:absolute;
+  top:180rpx;
+  left:240rpx;
+   font-size: 24rpx;
+   color:rgb(129, 127, 127);
+}
+.when{
+  position:absolute;
+  top:220rpx;
+  left:240rpx;
+   font-size: 24rpx;
+   color:rgb(129, 127, 127);
+}
+.daoy{
+  position:absolute;
+  top:260rpx;
+  left:240rpx;
+   font-size: 24rpx;
+   color:rgb(129, 127, 127);
+}
+.buy{
+  position:absolute;
+  top:300rpx;
+  left:240rpx;
+   font-size: 24rpx;
+   color:rgb(129, 127, 127);
+   width:400rpx;
+   text-overflow:ellipsis;
+    word-wrap:break-word;
+}
+.nav{
+  display: flex;
+  justify-content:flex-end;
+  width:90%;
+  margin:0 auto;
+  height:100rpx;
+  line-height: 100rpx;
+}
+.nav navigator{
+  /* background:#fff;
+  padding:20rpx;
+  border-radius: 20rpx; */
+  font-size: 32rpx;
+  
+  text-decoration:underline;
+}
+.return{
+  position:fixed;
+  right:20rpx;
+  bottom:100rpx;
+  color:rgb(100, 93, 93);
+  font-size: 24rpx;
+  border:1px solid rgb(99, 95, 95);
+  border-radius: 20rpx;
+  padding:10rpx;
+  text-align: center;
+  line-height: 30rpx;
+  width:80rpx;
+}
+.title2{
+  font-size: 24rpx;
+  width:100%;
+  background:#fff;
+  color:rgb(68, 67, 67);
+  text-align: center;
+  line-height: 40rpx;
+  margin-top:40rpx;
+}

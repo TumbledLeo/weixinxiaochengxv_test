@@ -1,0 +1,60 @@
+/* miniprogram/pages/bar/search/search.wxss */
+.title{
+  color:rgb(63, 61, 61);
+  font-size: 36rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+.jianjie,.chand{
+  color:rgb(63, 61, 61);
+  font-size: 30rpx;
+  text-align: justify;
+  text-indent:2em;
+  line-height: 60rpx;
+
+}
+.jianjie{
+  width:90%;
+  margin:0 auto;
+}
+.arts{
+  width:100%;
+  height:500rpx;
+    margin-top:80rpx;
+}
+.arts swiper{
+ height:400rpx;
+}
+.arts swiper-item{
+  text-align: center;
+  height:400rpx;
+}
+.arts image{
+  height:300rpx;
+  margin:0 auto;
+}
+.arts text{
+  width:200rpx;
+  margin:0 auto;
+  display: block;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  text-align: center;
+  color:rgb(63, 61, 61);
+}
+.tu{
+  margin-bottom:80rpx;
+  height:500rpx;
+}
+.tu swiper{
+  height:400rpx;
+  margin-top:40rpx;
+}
+.tu swiper-item{
+  text-align: center;
+  height:400rpx;
+}
+.tu image{
+  height:300rpx;
+  margin:0 auto;
+}

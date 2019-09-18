@@ -1,0 +1,16 @@
+<!--miniprogram/pages/show/goodType/goodType.wxml-->
+<view  wx:for="{{selectAll}}">
+  <!-- <navigator url="../../goods/good?id={{item._id}}"> -->
+    <navigator url="../../goods/good?id={{item._id}}">
+      <!-- <image src="{{item.imageUrl}}" class="show" mode="aspectFit"></image> -->
+<swiper autoplay="autoplay" indicator-dots="{{item.img.length>1?true:false}}" indicator-active-color="#f5b440" >
+  <block wx:for="{{item.img}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode="aspectFit"/>
+    </swiper-item>
+  </block>
+</swiper>
+      <view class="name">{{item.name}}</view>
+      <view class="des">{{item.des}}</view>
+    </navigator>
+</view>

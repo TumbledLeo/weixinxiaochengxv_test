@@ -1,0 +1,83 @@
+<!--index.wxml-->
+<view class="container content">
+  <view class="navbar">
+      <view class="date"> {{date}}</view>
+      <!-- <view class="pics">图片</view> -->
+      <view class="info"> {{info}}</view>
+  </view>
+  <!-- 顶部圆图 -->
+  <image src="{{topimg}}" class="topimg" model="center"></image>
+  <!-- 图片轮播 -->
+  <!-- <swiper autoplay="true">
+      <swiper-item wx:for="{{picss}}">
+        <image src="{{item}}" class="slide-image" mode="aspectFill"/>
+      </swiper-item>
+  </swiper> -->
+  <!-- 留言 -->
+  <form bindsubmit="formSubmit">
+    <textarea   maxlength="-1"
+     placeholder="说点什么吧，登录才能留言哦" 
+    class="shuru" 
+    placeholder-style="font-size:14px;"   
+    cursor-spacing="140"
+    bindblur="sayWords" value="{{textvalue}}"/>
+    <!-- 用户 openid -->
+    <view class="userinfo" style="margin-left:26rpx;">
+        <button 
+          open-type="getUserInfo" 
+          bindgetuserinfo="onGetUserInfo"
+          class="userinfo-avatar"
+          style="background-image: url({{avatarUrl}})"
+        ></button>
+        <text >{{userName}}</text>
+        <!--  <view>
+        <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button> 
+        </view>-->
+      <view class="btn">
+      <button disabled="{{btn}}" size="mini" type="primary" formType="submit">提交留言</button>
+      </view>
+    </view> 
+  </form>
+  <view class="linshi">{{says}}</view>
+  <view class="linshi" hidden="{{words.length>0?true:false}}">机会来了，还没有留言哦~</view>
+  <view>
+    <scroll-view class="comment"  wx:for="{{words}}" scroll-y="true">
+      <view class="xingming">{{item.word}}</view>
+      <view class="yuyan">{{item.word1}}</view>
+      <view class="riqi">{{item.word2}}</view>
+    </scroll-view>
+  </view>
+</view>
+  <!-- 上传图片 -->
+  <!-- <view class="uploader">
+    <view class="uploader-text" bindtap="doUpload">
+      <text>上传图片{{imgUrl}}</text>
+    </view>
+    
+    <view class="uploader-container" wx:if="{{imgUrl}}">
+      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
+    </view> 
+  </view> -->
+
+
+  <!-- 操作数据库 -->
+  <!-- <view class="uploader">
+    <navigator url="../databaseGuide/databaseGuide" open-type="navigate" class="uploader-text">
+      <text>前端操作数据库</text>
+    </navigator>
+  </view> -->
+
+  <!-- 新建云函数 -->
+  <!-- <view class="uploader">
+    <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
+      <text>快速新建云函数</text>
+    </navigator>
+  </view> -->
+
+  <!-- 云调用 -->
+  <!-- <view class="uploader">
+    <navigator url="../openapi/openapi" open-type="navigate" class="uploader-text">
+      <text>云调用</text>
+    </navigator>
+  </view> -->
+ 

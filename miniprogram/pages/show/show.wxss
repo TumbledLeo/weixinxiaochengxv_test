@@ -1,0 +1,136 @@
+/* miniprogram/pages/show/show.wxss */
+navigator{
+  width:90%;
+  text-align: center;
+  font-size: 24rpx;
+  margin:40rpx auto 0;
+
+}
+swiper image{
+  width:100%;
+  height:100%;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  background:#eeeeee;
+  margin:20rpx 0;
+
+}
+
+.nav .rm{
+  width:140rpx;
+  height:140rpx;
+  display: block;
+  margin:0 auto;
+background:#eeeeee;
+
+}
+
+.nav .des{
+  line-height: 100rpx;
+  font-size: 24rpx;
+  color:rgb(163, 159, 159);
+}
+.news {
+background:#eeeeee;
+  text-align: left;
+  padding-bottom:100rpx;
+}
+.news .title{
+text-align: center;
+font-size: 36rpx;
+letter-spacing: 4rpx;
+padding-top: 60rpx;
+font-family:"PingFangSC-Thin";
+color:#f59e2b;
+font-weight: bold;
+text-shadow: 2px 2px 8px #ffffff;
+}
+.news .show{
+  width:100%;
+  height:200rpx;
+}
+.news .navigator{
+  width:100%;
+   text-align: justify;
+}
+.news .step{
+  text-align: left;
+  padding:0 20rpx;
+}
+
+.news .step view{
+   text-indent: 2em;
+  text-align: left;
+}
+ .news image{
+  width:100%;
+  height:100%;
+  background-color: #eeeeee;
+}
+.selectSome image{
+  height:300rpx;
+}
+.selectSome .des{
+  font-size: 24rpx;
+  color:#464444;
+}
+.navbar{
+  width:68rpx;
+  height:68rpx;
+  position:fixed;
+  bottom:40rpx;
+  left:40rpx;
+  border-radius: 30px;
+}
+.more{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.8);
+  top:0;
+  left:0;
+
+}
+.more.true{
+  display:block;
+}
+.more.false{
+  display:none;
+}
+.more .close{
+  text-align: center;
+  line-height: 68rpx;
+  border-radius: 30rpx;
+  position:absolute;
+  width:68rpx;
+  height:68rpx;
+  background:#000;
+  bottom:40rpx;
+  left:40rpx;
+  color:#fff;
+  transform:rotate(45deg);
+}
+.more .cancel{
+  position:absolute;
+  bottom:40rpx;
+  left:40rpx;
+  /* background:#000;
+  border-radius: 60px; */
+}
+.more .goto{
+  color:#fff;
+  text-align: center;
+  line-height: 120rpx;
+  font-size: 36rpx;
+  margin-top:100rpx;
+  letter-spacing: 4rpx;
+}
+.goto navigator{
+  font-size: 30rpx;
+  margin:30rpx auto;
+  text-align: center;
+  width:100%;
+  
+}

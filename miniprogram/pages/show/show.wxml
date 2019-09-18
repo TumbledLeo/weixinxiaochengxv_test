@@ -1,0 +1,55 @@
+<!--miniprogram/pages/show/show.wxml-->
+<swiper indicator-dots="true" autoplay="true" circular="true">
+  <swiper-item>
+    <image src="https://6669-first-test-fpq61-1259603819.tcb.qcloud.la/shoppingMall/1.jpg?sign=dfb50008329d6b3f34feba751e9f193b&t=1565234168" mode="aspectFill"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="https://6669-first-test-fpq61-1259603819.tcb.qcloud.la/shoppingMall/7.jpg?sign=d2d80a717a7b166fe6fa92d708b9550f&t=1565234151" mode="aspectFill"></image>
+  </swiper-item>
+</swiper>
+<view class="nav">
+<block wx:for="{{shoppingType}}">
+  <navigator url="goodType/goodType?type={{item.type}}"   hover-class="none">
+    <image src="{{item.img}}" class="rm" mode="aspectFit"></image>
+    <text class="des">{{item.name}}</text>
+  </navigator>
+</block>
+    <!-- <navigator url="../openapi/cloudid/cloudid">
+      <image src="../../images/3.jpg" class="rm" mode="widthFix"></image>
+      <text>{{nav2}}</text>
+    </navigator>
+    <navigator url="../openapi/cloudid/cloudid">
+      <image src="../../images/4.jpg" class="rm" mode="aspectFit"></image>
+      <text>{{nav3}}</text>
+    </navigator>
+    <navigator url="../openapi/cloudid/cloudid">
+      <image src="../../images/5.jpg" class="rm" mode="aspectFit"></image>
+      <text>{{nav4}}</text>
+    </navigator> -->
+</view>
+<view class="news">
+  <view class="title">
+    新品展示
+  </view>
+  <view  wx:for="{{selectSome}}" class="selectSome">
+    <!-- <navigator url="../goods/good?id={{item._id}}"> -->
+    <navigator url="../goods/good?id={{item._id}}">
+        <!-- <image src="{{item.imageUrl}}" class="show" mode="aspectFit"></image> -->
+      <image src="{{item.img[0]}}" mode="aspectFit"></image>
+      <view class="des">{{item.name}}：{{item.des}}</view>
+    </navigator>
+  </view>
+</view>
+<view>
+    <image src="https://6669-first-test-fpq61-1259603819.tcb.qcloud.la/shoppingMall/show4.png?sign=55b6a1bb24c8b4ee6e9e303054d77fb5&t=1565234091" class="navbar" bindtap="navshow" mode="aspectFit"></image>
+  <view class="more {{or}}" >
+      <icon type="cancel" class="cancel" size="36" color="#fff" bindtap="navclose"></icon>
+      <view class="goto">
+        <view><navigator  url="goodType/goodType?type=kitchen">餐厅</navigator></view>
+        <view><navigator  url="goodType/goodType?type=bedroom">卧室</navigator></view>
+        <view><navigator  url="goodType/goodType?type=gift">礼物</navigator></view>
+        <view><navigator  url="../shop/shop">展览页</navigator></view>
+      </view>
+  </view>
+</view>
+

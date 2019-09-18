@@ -1,0 +1,17 @@
+<!--miniprogram/pages/bar/ranking/ranking.wxml-->
+<view class="doubant">豆瓣电影排名Top250</view>
+<view class="title2">本页共有{{total}}条数据，点击封面可查看电影详情</view>
+<view class="douban">
+  <view wx:for="{{movie}}" class="doubans">
+    <image src="{{item.images.medium}}" class="movieimg" mode="aspectFit"bindtap="getmore"  data-text="{{item.id}}"></image>
+    <view class="name">{{index+1}}:《 {{item.title}}》</view>
+    <view class="lei">类型：{{item.genres}}</view>
+    <view class="year">年份：{{item.year}}</view>
+    <view class="ping">评分：{{item.rating.average}}</view>
+    <view class="long">时长：{{item.durations}}</view>
+    <view class="when">上映时间：{{item.mainland_pubdate}}</view>
+    <view class="daoy">导演：{{item.directors[0].name}}</view>
+    <view class="buy" bindtap="copy" data-text="{{item.alt}}">购票链接（长按可复制）：{{item.alt}}</view>
+  </view>
+</view>
+<button type="" class="return" hidden='{{!floorstatus}}' bindtap="goTop">返回顶部</button>

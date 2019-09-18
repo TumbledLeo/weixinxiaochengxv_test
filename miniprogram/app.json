@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/show/show",
+    "pages/goods/good",
+    "pages/bar/index",
+    "pages/bar/ranking/ranking",
+    "pages/bar/search/search",
+    "pages/show/goodType/goodType",
+    "pages/shop/shop"
+  ],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "欢迎~~",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/show/show",
+        "text": "展览"
+      },
+      {
+        "pagePath": "pages/bar/index",
+        "text": "电影"
+      }
+    ]
+  }
+}

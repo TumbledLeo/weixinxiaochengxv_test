@@ -1,0 +1,29 @@
+<!--miniprogram/pages/bar/search/search.wxml-->
+<view class="title">{{title}}</view>
+<!-- 产地 -->
+<view class="chand">{{countries}}</view>
+<!-- 简介 -->
+<view class="jianjie">内容简介：{{summary}}</view>
+<!-- 演员 -->
+<view class="arts" >
+<view class="chand">演员</view>
+  <swiper  indicator-dots="true">
+    <swiper-item wx:for="{{casts}}">
+      <image src="{{item.avatars.small}}" class="slide-image"  mode="aspectFit"/>
+      <text>{{item.name}}</text>
+    </swiper-item>
+  </swiper>
+</view>
+
+
+<!-- 片图 -->
+<view class="tu">
+  <view class="chand">剧照</view>
+  <swiper autoplay="true" indicator-dots="true">
+    <swiper-item wx:for="{{photos}}">
+      <image src="{{item.thumb}}" class="slide-image"  mode="aspectFit"/>
+    </swiper-item>
+  </swiper>
+</view>
+
+

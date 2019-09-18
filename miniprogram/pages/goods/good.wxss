@@ -1,0 +1,88 @@
+/* miniprogram/pages/goods/good.wxss */
+image{
+  width:100%;
+  height:300rpx;
+}
+.des{
+  font-size: 30rpx;
+  color:rgb(59, 52, 52);
+  padding:0 20rpx;
+  line-height: 80rpx;
+}
+.main{
+  display:flex;
+  justify-content: space-between;
+   padding:0 20rpx;
+   line-height: 80rpx;
+   font-size: 30rpx;
+  color:rgb(59, 52, 52);
+  font-family: PingFangSC-Regular, sans-serif;
+}
+.main p{
+  color:#f5b440;
+  font-size: 60rpx;
+}
+.num{
+  width:400rpx;
+  display: flex;
+  margin:80rpx auto;
+  font-size: 48rpx;
+  justify-content: space-between;
+}
+.add , .reduce{
+  width:100rpx;
+  height:80rpx;
+  text-align: center;
+}
+.money{
+  padding:0 20rpx;
+  text-align: right;
+  margin:40rpx 0;
+}
+.money p{
+  color:#ff0000;
+  font-size: 60rpx;
+}
+button{
+  width:300rpx;
+  height:80rpx;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 80rpx;
+  float:right;
+  margin-right:20rpx;
+}
+.tishi{
+  font-size: 24rpx;
+  color:#81817f;
+  text-align: justify;
+  line-height: 40rpx;
+  padding:0 20rpx;
+  width:50%;
+  float:left;
+}
+.car{
+  width:80rpx;
+  height:100rpx;
+  background:url(https://6669-first-test-fpq61-1259603819.tcb.qcloud.la/dai_03.png?sign=84b08f11b4c36a412ad4a1a1657c0d6d&t=1565242863)no-repeat center;
+  background-size: cover;
+  color:#f5b440;
+  font-weight: bold;
+  font-size: 24rpx;
+  position:relative;
+  left:80%;
+  top:40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  transform:rotate(0deg);
+
+}
+.car#move{
+animation:mymove 0.5s 2 alternate;
+}
+@keyframes mymove
+{
+0%{transform:rotate(-10deg);}
+50% {transform:rotate(10deg);}
+100%{transform:rotate(0deg);}
+}

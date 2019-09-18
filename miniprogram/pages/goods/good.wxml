@@ -1,0 +1,30 @@
+<!--miniprogram/pages/goods/good.wxml-->
+<view>
+  <swiper indicator-dots="{{arr.img.length>1?true:false}}" autoplay="autoplay" indicator-active-color="#f5b440">
+    <swiper-item wx:for="{{arr.img}}">
+      <image src="{{item}}" mode="aspectFit"></image>
+    </swiper-item>
+  </swiper>
+  <view class="des">{{arr.name}}：{{arr.des}}</view>
+  <view class="main">
+    <view >库存：{{count}}</view>
+    <view><p>{{arr.price}}</p></view>
+  </view>
+  <view class="num">
+    <view bindtap="reduce" class="reduce">-</view>
+    <view>{{num}}</view>
+    <view bindtap="add" class="add">+</view>
+  </view>
+  <view class="money">
+    <view><p>{{arr.price*num}}</p></view>
+  </view>
+  <button type="primary" disabled="{{num>0?false:true}}" bindtap="buy">加入展览页</button>
+  <view class="tishi">加入展览页，我们将为您保留并减去相应数量，记得随时查看哦~</view>
+</view>
+<view class="car" bindtap="shop" id="{{move?'move':''}}">
+  <!-- <view class="all" bindtap="onGetOpenid">{{buycar}}</view> -->
+    <view class="all" bindtap="onGetOpenid"></view>
+</view>
+
+
+
